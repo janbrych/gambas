@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { BetControls } from '../BetControls';
 import { soundFx } from '../../utils/sound';
 import confetti from 'canvas-confetti';

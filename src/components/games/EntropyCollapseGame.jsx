@@ -8,7 +8,6 @@ export function EntropyCollapseGame({ balance, setBalance, onUpdateStats }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedNode, setSelectedNode] = useState(0);
   const [gridNodes, setGridNodes] = useState(Array(16).fill('stable')); // 'stable', 'collapsed', 'survived'
-  const [survivingNode, setSurvivingNode] = useState(null);
   const [resultMsg, setResultMsg] = useState(null);
 
   const canvasRef = useRef(null);
@@ -62,7 +61,6 @@ export function EntropyCollapseGame({ balance, setBalance, onUpdateStats }) {
 
     setIsPlaying(true);
     setResultMsg(null);
-    setSurvivingNode(null);
     setBalance(prev => prev - betAmount);
     setGridNodes(Array(16).fill('stable'));
 
@@ -87,7 +85,6 @@ export function EntropyCollapseGame({ balance, setBalance, onUpdateStats }) {
         step++;
       } else {
         clearInterval(interval);
-        setSurvivingNode(winningIdx);
         setGridNodes(prev => {
           const next = [...prev];
           next[winningIdx] = 'survived';

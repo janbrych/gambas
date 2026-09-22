@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   Coins, Volume2, VolumeX, RefreshCw, Trophy,
-  BarChart2, Search, Zap, ShieldAlert, Sparkles, Gamepad2, ArrowLeft
+  Sparkles, Gamepad2, ArrowLeft
 } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 

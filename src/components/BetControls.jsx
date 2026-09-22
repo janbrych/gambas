@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coins, Zap, RefreshCw } from 'lucide-react';
+import { Zap, RefreshCw } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 
 export function BetControls({ betAmount, setBetAmount, balance, onPlay, isPlaying, playText = 'SPIN / PLAY', disabled = false }) {
