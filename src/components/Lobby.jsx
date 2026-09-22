@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { GAMES, GAME_CATEGORIES } from '../data/games';
 import {
-  Search, Sparkles, Zap, Trophy, Play, ShieldAlert,
+  Search, Sparkles, Zap, Play,
   Grid, Atom, Orbit, Sun, Clock, GitBranch, Brain, Snowflake,
   Moon, Activity, Cpu, RotateCw, Maximize2, Layers, Box, Flame,
   Dna, Star, Compass, Shield, Disc, Radio, SunDim, Share2, Droplet,
